@@ -44,7 +44,7 @@
 - 핵심 질문: 해외에 나가는 한국 기업에는 한국 법과 진출국 법이 각각 무엇을 요구하는가?
 - 목표: Explain — 한국 쪽 의무(외환 신고, 수출통제, 해외 뇌물 금지, 국외 자료 제출)와 진출국 쪽 규칙(외국인투자 심사, 법인 설립, 노동, 세금)을 층으로 나눠 설명한다.
 - 만들어 볼 것: 「한국에서 할 일 / 진출국에서 할 일 / 둘 다」 세 칸 표를 학습자 사례로 채우기
-- 국내 근거: 외국환거래법 목적과 자본거래 신고 [K1] [K4], 대외무역법 목적 [K13], 국제상거래뇌물방지법 목적 [K19], 국제조세조정법의 해외현지법인 자료 제출 의무 [K38]
+- 국내 근거: 외국환거래법 자본거래 신고 의무 [K4], 대외무역법 전략물자 수출허가 의무 [K15], 국제상거래뇌물방지법 형사책임 [K20], 국제조세조정법의 해외현지법인 자료 제출 의무 [K38]
 - 글로벌 비교: 중국 외상투자법 [G26], 베트남 투자법 [G24], 미국 외국인투자 심사(CFIUS) [G20]
 
 ## M · 시장과 진출 방식
@@ -56,7 +56,7 @@
 - 만들어 볼 것: 후보 3개국 스크리닝 표(가중치는 학습자가 정하고 이유를 적는다)
 - 국내 근거: 외교부 여행경보 제도와 국가별 안전 정보 [K92] [K95], KOTRA 국별 진출전략 [K81], 국세청 외국 세무 정보 [K115]
 - 글로벌 비교: World Bank B-READY [G38], UNCTAD 세계투자보고서 [G37], UN 안보리 제재 통합 목록 [G36]
-- 경계·연결: 조세조약 조문 적용과 원천세 계산은 go-tax. 거점 위기 대응·BCP는 go-resilience
+- 경계·연결: 조세조약 조문 적용과 원천세 계산은 go-tax. 거점 위기 대응·BCP는 go-resilience. 전략물자 수출허가 실무는 go-scm
 
 ### M2 · 시장 조사의 자료원
 - 선수: M1
@@ -64,7 +64,7 @@
 - 목표: Apply — 무역 통계·해외직접투자 통계·해외시장 뉴스를 찾아 관심 국가의 시장 규모 추정과 경쟁 지형을 출처와 함께 정리한다.
 - 만들어 볼 것: 관심 국가 한 쪽짜리 시장 메모(숫자마다 발표 기관·기준 연도)
 - 국내 근거: 한국무역협회 무역통계 [K97] [K98], 한국수출입은행 해외투자통계 [K87], KOTRA 해외시장뉴스 [K79]
-- 글로벌 비교: UNCTAD 세계투자보고서 [G37], World Bank B-READY [G38]
+- 글로벌 비교: 국제 무역·투자 통계 원천 — UN Comtrade [G45], UNCTADstat [G46], WTO Stats [G47]
 - 경계·연결: 현지화 마케팅 전략은 go-marketing
 
 ### M3 · 진출 방식 결정
@@ -92,7 +92,7 @@
 - 핵심 질문: 현지 법인에 돈을 보내기 전에 한국에서 누구에게 무엇을 신고해야 하는가?
 - 목표: Apply — 처음 보는 투자 사례에서 해외직접투자 해당 여부, 신고 기관(지정거래외국환은행), 신고 시점과 순서를 판단한다.
 - 만들어 볼 것: 학습자 회사의 첫 투자 송금까지 국내 절차 흐름도(은행·서류·시점, 기준은 그 세션에서 확인)
-- 국내 근거: 외국환거래법 해외직접투자 정의와 자본거래 신고 [K2] [K4], 시행령의 해외직접투자 범위 [K10], 외국환거래규정 해외직접투자 절과 신고 [K47] [K48] [K50] [K51], 위반 시 제재 [K5] [K8], 금융감독원 신고 절차 안내 [K59]
+- 국내 근거: 외국환거래법 해외직접투자 정의와 자본거래 신고 [K2] [K4], 시행령의 해외직접투자 범위 [K10], 외국환거래규정 해외직접투자 절과 신고 [K47] [K48] [K50] [K51], 위반 시 제재 [K5] [K8], 금융감독원 신고 절차 안내 [K59], 2026-12-03 시행 예정 외국환거래법 개정(가상자산 관련, 해외직접투자 정의 호 번호 유지) [K127]
 - 글로벌 비교: 중국 외상투자법의 정보 보고 [G26], 베트남 투자등록 절차 [G25]
 - 경계·연결: 외화 차입·자본거래 일반은 go-finance
 
@@ -101,16 +101,16 @@
 - 핵심 질문: 설립 뒤 증자·대여·지분 변경·결산 때 한국에 무엇을 다시 알려야 하는가?
 - 목표: Apply — 투자 이후 사건(증자, 지분 양도, 현지 법인 대여, 연간 결산)마다 필요한 사후관리 보고를 찾아 일정표에 넣는다.
 - 만들어 볼 것: 현지 법인 1년치 국내 보고 캘린더(항목별 근거 조항과 확인 시점)
-- 국내 근거: 외국환거래규정 사후관리 보고 [K53] [K54], 투자금 회수 [K52], 금융감독원 위반 사례집 [K64], 국제조세조정법 해외현지법인 자료 제출 [K38] [K39]
+- 국내 근거: 외국환거래규정 사후관리 보고 [K53] [K54], 투자금 회수 [K52], 금융감독원 위반 사례집(2019, 2023·2025 규정 개정 전 사례) [K64], 국제조세조정법 해외현지법인 자료 제출과 국세청 부속서류 고시 [K38] [K39] [K116]
 - 글로벌 비교: 미국의 외국인 소유 법인 정보 신고(Form 5472) [G19]
 
 ### S3 · 현지 법인 형태와 설립 절차
-- 선수: F4, M3
-- 핵심 질문: 진출국에서 법인·지점·연락사무소 중 무엇으로, 어떤 순서로 세우는가?
-- 목표: Evaluate — 관심 국가 하나에서 설립 형태 둘 이상을 책임 범위·설립 기간·허가·외국인 지분 제한·철수 쉬움으로 비교해 고르고, 설립 순서를 짠다.
-- 만들어 볼 것: 관심 국가 설립 경로표(형태 비교, 현지 등록 단계, 한국 신고와의 순서 맞물림)
+- 선수: S1, M3
+- 핵심 질문: 진출국에서 법인·지점·연락사무소 중 무엇으로, 어떤 순서로 세우고, 지점·사무소라면 한국에 무엇을 따로 신고하는가?
+- 목표: Evaluate — 관심 국가 하나에서 설립 형태 둘 이상을 책임 범위·설립 기간·허가·외국인 지분 제한·철수 쉬움으로 비교해 고르고, 설립 순서를 짠다. 지점·사무소를 고르면 해외지사 설치 신고 → 설치 완료 보고 → 폐쇄 신고의 국내 절차를 짚는다.
+- 만들어 볼 것: 관심 국가 설립 경로표(형태 비교, 현지 등록 단계, 한국 신고와의 순서 맞물림 — 현지 법인은 해외직접투자 신고, 지점·사무소는 해외지사 신고)
 - 국내 근거: 외국환거래규정 해외지사 설치 신고와 사후관리 [K122], 해외직접투자 신고 [K50], 대비 자료로 외국인투자촉진법의 투자 신고 [K29] [K30]
-- 글로벌 비교: 미국 델라웨어 법인 설립 [G18], 일본 진출 형태와 상업 등기 [G21] [G22], 싱가포르 회사 등록 [G23], 베트남 투자법·투자등록 [G24] [G25], 중국 외상투자법과 네거티브 리스트 [G26] [G27], 독일 GmbH 설립 [G28], EU 외국인투자 심사 [G29]
+- 글로벌 비교: 미국 델라웨어 법인 설립 [G18], 일본 진출 형태와 상업 등기 [G21] [G22], 싱가포르 회사 등록 [G23], 베트남 투자법·투자등록 [G24] [G25], 중국 외상투자법과 네거티브 리스트 [G26] [G27], 독일 GmbH 설립 [G28], EU 외국인투자 심사(현행 규정과 적용 예정 규정) [G29]
 - 경계·연결: 현지 개인정보·데이터 이전 규제는 go-security
 
 ### S4 · 본사와 현지 법인 사이의 지배구조
@@ -118,7 +118,7 @@
 - 핵심 질문: 현지 법인장에게 어디까지 맡기고, 본사는 무엇을 언제 보고받아야 하는가?
 - 목표: Apply — 학습자 회사의 현지 법인에 대해 이사회 구성, 결정 권한 위임 범위, 본사 보고 종류를 정한다.
 - 만들어 볼 것: 현지 법인 결정 권한 표(현지 결정 / 본사 승인 / 본사 보고)와 보고 목록
-- 국내 근거: 국제조세조정법의 해외현지법인 자료 제출(본사가 갖고 있어야 할 자료) [K38], 국세청 해외현지법인·지사 부속서류 고시 [K116]
+- 국내 근거: 상법의 자회사 정의와 모회사 감사의 자회사 조사권 [K126], 외국환거래규정 사후관리의 연간 보고(본사가 받아야 할 현지 법인 실적) [K53], 국제조세조정법의 해외현지법인 자료 제출 [K38]
 - 글로벌 비교: 다국적 기업의 정당성과 본사-자회사 관계 [A11], OECD 다국적기업 가이드라인 [G8]
 - 경계·연결: 해외 자회사 외화 환산·연결 회계는 go-accounting. 위임전결과 내부통제 체계는 go-control. 월간 경영 보고·예산은 go-controllership. 해외 자회사 내부회계관리는 go-icfr
 
@@ -138,7 +138,7 @@
 - 만들어 볼 것: 본사-현지 법인 자금 흐름도(경로별 신고·보고, 조약 확인 필요, 환위험 표시)
 - 국내 근거: 외국환거래규정 해외직접투자 수단과 투자금 회수 [K49] [K52], 한국은행 외환거래 신고 안내 [K66], 국세청 국제거래정보 통합보고서 [K113]
 - 글로벌 비교: OECD 이전가격 지침(회수 경로의 가격 문제) [G9]
-- 경계·연결: 조세조약상 원천세와 외국납부세액은 go-tax. 환위험 헤지 상품과 자금 조달 구조는 go-finance
+- 경계·연결: 조세조약상 원천세와 외국납부세액은 go-tax. 환위험 헤지 상품과 자금 조달 구조는 go-finance. 환율 결정 이론은 go-economics
 
 ### S7 · 이전가격의 기본 감각
 - 선수: S6
@@ -151,11 +151,11 @@
 
 ### S8 · 철수와 청산, 국내 복귀
 - 선수: S2, S3
-- 핵심 질문: 현지 법인을 접거나 한국으로 돌아올 때 무엇을 정리하고, 어떤 지원이 있는가?
-- 목표: Apply — 철수 사례에서 청산 순서(현지 청산, 잔여재산 회수, 국내 청산 보고)와 국내 복귀 지원 요건을 확인할 항목을 정한다.
+- 핵심 질문: 현지 법인이나 지점·사무소를 접거나 한국으로 돌아올 때 무엇을 정리하고, 어떤 지원이 있는가?
+- 목표: Apply — 철수 사례에서 청산 순서(현지 청산, 잔여재산 회수, 국내 청산 보고, 지점·사무소는 폐쇄 신고)와 국내 복귀 지원 요건을 확인할 항목을 정한다.
 - 만들어 볼 것: 현지 법인 철수 단계표(현지 / 한국 / 확인 기관)
-- 국내 근거: 외국환거래규정 투자금 회수와 청산 [K52], 해외진출기업복귀법 정의와 지원 [K24] [K26], 국내복귀기업 지원 대상 안내 [K106]
-- 글로벌 비교: 베트남 투자법의 투자 종료 규정 [G24], 중국 외상투자법 [G26]
+- 국내 근거: 외국환거래규정 투자금 회수와 청산 [K52], 해외지사 폐쇄 [K122], 해외진출기업복귀법 정의와 지원 [K24] [K26], 국내복귀기업 지원 대상 안내 [K106]
+- 글로벌 비교: 베트남 투자법 제36조 투자 사업의 종료 [G49], 중국 회사법 제12장 회사의 해산과 청산 [G48]
 
 ## R · 국제 거래 규범과 리스크
 
@@ -182,17 +182,17 @@
 - 핵심 질문: 내 제품이나 거래 상대가 통제·제재 대상인지 어떻게 알고, 해당하면 무엇이 달라지는가?
 - 목표: Apply — 거래 사례에서 확인할 것(품목 판정, 최종 사용자·국가, 제재 목록, 소유 지분 규칙)과 조회 기관을 정한다. 해당 여부의 결론은 공식 판정과 전문가로 넘긴다.
 - 만들어 볼 것: 신규 해외 거래 제재·수출통제 스크리닝 순서도(조회 기관과 멈출 지점)
-- 국내 근거: 대외무역법 전략물자와 수출허가·판정 [K14] [K15] [K16], 무역안보관리원과 YESTRADE [K17] [K119] [K120], 위반 시 벌칙 [K18]
+- 국내 근거: 외국환거래법의 국제평화·안전 유지를 위한 지급·수령 허가(한국의 경제제재 근거) [K123] [K124], 대외무역법 전략물자와 수출허가·판정 [K14] [K15] [K16], 무역안보관리원과 YESTRADE [K17] [K119] [K120], 위반 시 벌칙 [K18]
 - 글로벌 비교: 미국 OFAC 제재 목록과 지분 합산 규칙(50 Percent Rule) [G30] [G31], 미국 수출관리규정(EAR) [G32], EU 제재 [G33] [G34], UN 안보리 제재 목록 [G36], 바세나르 체제 [G35]
 - 경계·연결: 전략물자 수출허가 신청 실무와 통관은 go-scm
 
 ### R4 · 진출 지원 제도 활용
 - 선수: M2
-- 핵심 질문: 처음 해외로 나가는 회사가 혼자 하지 않아도 되는 일은 무엇이고, 어디에 도움을 청하는가?
+- 핵심 질문: 처음 해외로 나가는 회사가 혼자 하지 않아도 되는 일은 무엇이고, 어디에 도움을 청하는가(정보·거점·보험·정책금융)?
 - 목표: Apply — 학습자 회사의 진출 단계(조사, 거점, 투자, 위험 대비, 복귀)마다 쓸 수 있는 공공 지원 제도를 찾아 신청 요건 확인 항목을 정한다.
 - 만들어 볼 것: 진출 단계별 지원 제도 지도(제도, 운영 기관, 확인할 요건과 시점)
-- 국내 근거: KOTRA 지사화 사업·수출바우처·투자진출 상담 [K74] [K76] [K77], 수출바우처 포털 [K84], 한국무역보험공사 해외투자보험 [K89], 외교부 해외안전여행 [K92], 국내복귀 지원 [K107]
-- 글로벌 비교: 일본 JETRO의 외국 기업 진출 지원(받는 쪽에서 본 투자 유치 기관) [G21], 독일 GTAI [G28]
+- 국내 근거: KOTRA 지사화 사업·수출바우처·투자진출 상담 [K74] [K76] [K77], 수출바우처 포털 [K84], 한국수출입은행 해외사업 관련 대출(정책금융) [K125], 한국무역보험공사 해외투자보험 [K89], 외교부 해외안전여행 [K92], 국내복귀 지원 [K107]
+- 글로벌 비교: 자국 기업의 해외 진출을 돕는 다른 나라 기관 — 일본 JETRO 해외 진출 지원과 NEXI 해외투자보험 [G42] [G41], 영국 UK Export Finance [G43], 미국 EXIM [G44]
 
 ## C · 문화와 조직
 
@@ -207,16 +207,16 @@
 
 ### C2 · 글로벌 조직 설계
 - 선수: C1, S4
-- 핵심 질문: 본사의 표준을 밀어붙일 곳과 현지에 맞출 곳은 어떻게 나누는가?
+- 핵심 질문: 본사의 표준을 밀어붙일 곳과 현지에 맞출 곳은 어떻게 나누고, 외국 기업이라서 생기는 불리함은 조직으로 어떻게 줄이는가?
 - 목표: Evaluate — 통합-현지화 틀로 기능(제품, 영업, 인사, 재무)별로 본사 표준과 현지 재량을 나누고 조직 형태를 고른다.
 - 만들어 볼 것: 기능별 통합-현지화 배치도와 학습자 회사에 맞는 조직 형태 선택 근거
-- 국내 근거: KOTRA 국별 진출전략의 진출 사례 [K81]
+- 국내 근거: 조직 설계를 정하는 국내 법 근거는 없어, 한국 기업의 진출 사례를 담은 KOTRA 국별 진출전략으로 대신한다 [K81]
 - 글로벌 비교: 통합-현지화 틀 [A10], 다국적 기업의 정당성 [A11]
 
 ## X · 졸업
 
 ### X1 · 한 국가 진출 검토서
-- 선수: M3, S1, S3, R2, R3
+- 선수: M3, S2, S3, S5, S7, R2, R3, R4
 - 핵심 질문: 대표에게 「이 나라에 이 방식으로 들어가자」고 올릴 검토서에는 무엇이 들어가야 하는가?
 - 목표: Develop — 실제로 검토 중이거나 관심 있는 한 국가에 대해, 근거와 확인 시점이 달린 진출 검토서 초안을 만든다.
 - 만들어 볼 것: 진출 검토서 초안 — 여섯 절: ① 국가·진출 방식 비교 ② 국내 신고·보고 체크리스트 ③ 현지 설립 경로 ④ 운영 리스크(노무·외환·이전가격·반부패·제재) ⑤ 지원 제도 ⑥ 확인 필요 목록(누가·어디서·언제 확인할지)
@@ -228,20 +228,17 @@
 조회일은 모두 원문을 열어 확인한 날이다. 확인 방식(원문·검색 요약)과 조문 원문 대조 기록은 구축 원장에 있다(`docs/build/sources-ledger.md`). `변동: 잦음`은 개정·갱신이 잦아 튜터가 말할 때 확인 시점을 붙여야 하는 출처다.
 
 ### 국내
-- [K1] 외국환거래법 제1조(목적) — 한국법제연구원 국문 법령 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR>, 현행본 <https://www.law.go.kr/법령/외국환거래법> 조회일 2026-11-14
 - [K2] 외국환거래법 제3조 제1항 제18호(해외직접투자 정의) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14
 - [K4] 외국환거래법 제18조(자본거래의 신고 등) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14
 - [K5] 외국환거래법 제19조(경고 및 거래정지 등) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14
 - [K8] 외국환거래법 제32조(과태료) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14
 - [K10] 외국환거래법 시행령 제8조(해외직접투자) 제1항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> 조회일 2026-11-14
 - [K11] 외국환거래법 시행령 제8조(해외직접투자) 제2항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> 조회일 2026-11-14
-- [K13] 대외무역법 제1조(목적) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14
-- [K14] 대외무역법 제19조(전략물자) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14
-- [K15] 대외무역법 제19조의2(수출허가)~제19조의5(중개허가) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14
-- [K16] 대외무역법 제20조(전문판정)·제20조의2(자가판정) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14
+- [K14] 대외무역법 제19조(전략물자) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14 변동: 잦음
+- [K15] 대외무역법 제19조의2(수출허가)~제19조의5(중개허가) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14 변동: 잦음
+- [K16] 대외무역법 제20조(전문판정)·제20조의2(자가판정) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14 변동: 잦음
 - [K17] 대외무역법 제25조(무역안보관리원의 설립 등) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14
 - [K18] 대외무역법 제53조(벌칙)·제57조(양벌규정) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14
-- [K19] 국제상거래에 있어서 외국공무원에 대한 뇌물방지법 제1조(목적) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=59810&lang=KOR> 조회일 2026-11-14
 - [K20] 같은 법 제3조(뇌물공여자 등의 형사책임) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=59810&lang=KOR> 조회일 2026-11-14
 - [K21] 같은 법 제4조(양벌규정) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=59810&lang=KOR> 조회일 2026-11-14
 - [K22] 같은 법 제2조(외국공무원등의 범위) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=59810&lang=KOR> 조회일 2026-11-14
@@ -266,9 +263,9 @@
 - [K52] 외국환거래규정 제9-4조(투자금의 회수)·제9-6조(해외직접투자사업의 청산) <https://www.mofe.go.kr/lw/denm/detailTbDenmView.do?searchBbsId1=MOSFBBS_000000000120&searchNttId1=MOSF_000000000079810&menuNo=7090200> 조회일 2026-11-14 변동: 잦음
 - [K53] 외국환거래규정 제9-9조(사후관리) 제1항 <https://www.mofe.go.kr/lw/denm/detailTbDenmView.do?searchBbsId1=MOSFBBS_000000000120&searchNttId1=MOSF_000000000079810&menuNo=7090200> 조회일 2026-11-14 변동: 잦음
 - [K54] 외국환거래규정 제9-9조 제2항 이하·제9-2조의2 <https://www.mofe.go.kr/lw/denm/detailTbDenmView.do?searchBbsId1=MOSFBBS_000000000120&searchNttId1=MOSF_000000000079810&menuNo=7090200> 조회일 2026-11-14 변동: 잦음
-- [K59] 금융감독원 외국환거래안내 「해외 법인(역외금융회사 등)에 투자를 하는 경우」 <https://www.fss.or.kr/fss/job/tyFetactInfo/view.do?dlngSlno=10&menuNo=200473&pageIndex=1> 조회일 2026-11-14
-- [K64] 금융감독원 「외국환거래 위반사례집」(2019) <https://www.fss.or.kr/fss/bbs/B0000157/view.do?nttId=20764&menuNo=200167> 조회일 2026-11-14
-- [K66] 한국은행 외환거래심사 안내·외환거래별 신고 <https://www.bok.or.kr/portal/main/contents.do?menuNo=200404> 조회일 2026-11-14
+- [K59] 금융감독원 외국환거래안내 「해외 법인(역외금융회사 등)에 투자를 하는 경우」 <https://www.fss.or.kr/fss/job/tyFetactInfo/view.do?dlngSlno=10&menuNo=200473&pageIndex=1> 조회일 2026-11-14 변동: 잦음
+- [K64] 금융감독원 「외국환거래 위반사례집」(2019, 이후 규정 개정 전 사례) <https://www.fss.or.kr/fss/bbs/B0000157/view.do?nttId=20764&menuNo=200167> 조회일 2026-11-14
+- [K66] 한국은행 외환거래심사 안내·외환거래별 신고 <https://www.bok.or.kr/portal/main/contents.do?menuNo=200404> 조회일 2026-11-14 변동: 잦음
 - [K68] 국민연금공단 사회보장협정 개요 <https://www.nps.or.kr/pnsinfo/sclsmise/getOHAF0126M0.do> 조회일 2026-11-14
 - [K69] 국민연금공단 사회보장협정 국가별 안내 <https://www.nps.or.kr/pnsinfo/sclsmise/getOHAF0130M0.do> 조회일 2026-11-14
 - [K74] KOTRA 무역투자24 「지사화 사업」 <https://www.kotra.or.kr/subList/20000005984/subhome/bizIntro/selectBizDetail.do?bizClCd=ESPUDMJH> 조회일 2026-11-14 변동: 잦음
@@ -280,23 +277,29 @@
 - [K84] 수출지원기반활용사업 수출바우처 사업 안내 <https://www.exportvoucher.com/portal/bizinfo/voucher_01> 조회일 2026-11-14 변동: 잦음
 - [K87] 한국수출입은행 해외투자통계 <https://stats.koreaexim.go.kr/main.do> 조회일 2026-11-14
 - [K88] 한국수출입은행 해외직접투자통계 변동추세 <https://stats.koreaexim.go.kr/sub/totalStatistics.do> 조회일 2026-11-14
-- [K89] 한국무역보험공사 해외투자보험 <https://www.ksure.or.kr/rh-kr/cntnts/i-210/web.do> 조회일 2026-11-14
+- [K89] 한국무역보험공사 해외투자보험 <https://www.ksure.or.kr/rh-kr/cntnts/i-210/web.do> 조회일 2026-11-14 변동: 잦음
 - [K92] 외교부 해외안전여행 여행경보제도 <https://www.0404.go.kr/bbs/contsPst/MST0000000000127/27/detail> 조회일 2026-11-14
 - [K95] 외교부 해외안전여행 국가/지역별 정보 <https://www.0404.go.kr/ntnSafetyInfo/list> 조회일 2026-11-14 변동: 잦음
 - [K97] 한국무역협회 K-stat 무역통계 <https://stat.kita.net/> 조회일 2026-11-14
 - [K98] 한국무역협회 K-stat 통계가이드 <https://stat.kita.net/stat/guide/guideMain.screen> 조회일 2026-11-14
 - [K99] 근로복지공단 산재·고용보험 적용특례(해외파견자) <https://www.comwel.or.kr/comwel/paym/join/excp.jsp> 조회일 2026-11-14
-- [K106] Invest KOREA 국내복귀기업지원 지원대상 <https://www.investkorea.org/ik-kr/cntnts/i-237/web.do> 조회일 2026-11-14
-- [K107] Invest KOREA 국내복귀기업 지원 신청 <https://www.investkorea.org/ik-kr/cntnts/i-2202/web.do> 조회일 2026-11-14
+- [K106] Invest KOREA 국내복귀기업지원 지원대상 <https://www.investkorea.org/ik-kr/cntnts/i-237/web.do> 조회일 2026-11-14 변동: 잦음
+- [K107] Invest KOREA 국내복귀기업 지원 신청 <https://www.investkorea.org/ik-kr/cntnts/i-2202/web.do> 조회일 2026-11-14 변동: 잦음
 - [K109] 대한상사중재원 중재 안내 <https://www.kcab.or.kr/intervention/intervention_info.do> 조회일 2026-11-14
 - [K110] KCAB International Arbitration Rules 2026 <https://www.kcabinternational.or.kr/arbitration/arbitration_rules.do> 조회일 2026-11-14
 - [K112] 국세청 상호합의·APA(정상가격 산출방법 사전승인) 사전상담 <https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=135741&cntntsId=109139> 조회일 2026-11-14
 - [K113] 국세청 국제거래정보 통합보고서 <https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2514&cntntsId=7820> 조회일 2026-11-14
 - [K115] 국세청 국제조세정보 외국 세무정보 <https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2510&cntntsId=7817> 조회일 2026-11-14
 - [K116] 국세청 고시 「해외현지법인 및 지사 관련 부속서류 제출 대상과 서식의 지정 고시」 <https://nts.go.kr/nts/na/ntt/selectNttInfo.do?mi=&nttSn=40598> 조회일 2026-11-14
-- [K119] YESTRADE 수출허가 안내 개요 <https://www.yestrade.go.kr/export-permissions/guide/overview> 조회일 2026-11-14
-- [K120] YESTRADE 온라인 자가판정 안내 <https://www.yestrade.go.kr/judgements/self/guide> 조회일 2026-11-14
+- [K119] YESTRADE 수출허가 안내 개요 <https://www.yestrade.go.kr/export-permissions/guide/overview> 조회일 2026-11-14 변동: 잦음
+- [K120] YESTRADE 온라인 자가판정 안내 <https://www.yestrade.go.kr/judgements/self/guide> 조회일 2026-11-14 변동: 잦음
 - [K122] 외국환거래규정 제9장 제2절 국내기업 등 해외지사(제9-16조 적용범위, 제9-18조 설치신고, 제9-24조 폐쇄, 제9-25조 사후관리) <https://www.mofe.go.kr/lw/denm/detailTbDenmView.do?searchBbsId1=MOSFBBS_000000000120&searchNttId1=MOSF_000000000079810&menuNo=7090200> 조회일 2026-11-14 변동: 잦음
+
+- [K123] 외국환거래법 제15조(지급절차 등) 제2항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14 변동: 잦음
+- [K124] 외국환거래법 시행령 제29조(지급 또는 수령의 허가) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> 조회일 2026-11-14 변동: 잦음
+- [K125] 한국수출입은행 해외사업관련대출(해외투자자금 등) <https://www.koreaexim.go.kr/HPHKFG045M01> 조회일 2026-11-14 변동: 잦음
+- [K126] 상법 제342조의2(자회사에 의한 모회사주식의 취득)·제412조의5(자회사의 조사권) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=54525&lang=KOR> 조회일 2026-11-14
+- [K127] 외국환거래법 일부개정법률(법률 제21714호, 2026-06-02 공포, 2026-12-03 시행 예정) — 국민참여입법센터 의안 제2218829호 <https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218829/detailRP> 조회일 2026-11-14 변동: 잦음
 
 ### 글로벌
 - [G1] 15 U.S.C. §78dd-1(발행인의 금지된 해외 거래 관행) — U.S. Code 2024 ed. <https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap2B-sec78dd-1.htm> 조회일 2026-11-14
@@ -320,12 +323,12 @@
 - [G21] JETRO, Setting Up Business in Japan — Section 1 Incorporating Your Business <https://www.jetro.go.jp/en/invest/setting_up/section1/page1.html> 조회일 2026-11-14
 - [G22] 일본 법무성 상업·법인 등기 신청서 양식·합동회사 설립 절차 <https://www.moj.go.jp/MINJI/minji06_00141.html> 조회일 2026-11-14
 - [G23] Singapore ACRA, Registering a local company via Bizfile <https://www.acra.gov.sg/register/business/registering-different-business-structures/local-company/registering-via-bizfile/> 조회일 2026-11-14
-- [G24] 베트남 투자법 Luật Đầu tư số 143/2025/QH15(2026-03-01 시행, 61/2020/QH14 대체) <https://vanban.chinhphu.vn/?pageid=27160&docid=216524&classid=1&typegroupid=3> 조회일 2026-11-14 변동: 잦음
+- [G24] 베트남 투자법 Luật Đầu tư số 143/2025/QH15(2026-03-01 시행, 제51조 제4항으로 61/2020/QH14 실효) <https://vanban.chinhphu.vn/?pageid=27160&docid=216524&classid=1&typegroupid=3> 조회일 2026-11-14 변동: 잦음
 - [G25] 베트남 재무부 정책 질의응답 — Nghị định 96/2026/NĐ-CP 투자등록·기업등록 순서 <https://portal.mof.gov.vn/hoidapcstc/home/cthoidap/167087> 조회일 2026-11-14 변동: 잦음
-- [G26] 중화인민공화국 외상투자법(2019 채택, 2020-01-01 시행) <https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=66447> 조회일 2026-11-14
+- [G26] 중화인민공화국 외상투자법(2019 채택, 2020-01-01 시행) <https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=66447> 조회일 2026-11-14 변동: 잦음
 - [G27] 중국 외상투자 진입 특별관리조치(네거티브 리스트) 2024년판 <https://www.ndrc.gov.cn/xxgk/jd/jd/202409/t20240907_1392878.html> 조회일 2026-11-14 변동: 잦음
 - [G28] Germany Trade & Invest, Investment Guide — Setting Up a GmbH <https://www.gtai.de/en/invest/investment-guide/setting-up-a-gmbh-630322> 조회일 2026-11-14
-- [G29] EU 외국인투자 심사 — Regulation (EU) 2019/452를 대체한 Regulation (EU) 2026/1386 <https://policy.trade.ec.europa.eu/enforcement-and-protection/investment-screening_en> 조회일 2026-11-14 변동: 잦음
+- [G29] EU 외국인투자 심사 — 현행 Regulation (EU) 2019/452, 이를 대체할 Regulation (EU) 2026/1386(2026-06-17 채택, 2028-01-17 적용 예정 — 그때까지 2019/452가 현행) <https://policy.trade.ec.europa.eu/enforcement-and-protection/investment-screening_en> 조회일 2026-11-14 변동: 잦음
 - [G30] OFAC Specially Designated Nationals and Blocked Persons List <https://sanctionslist.ofac.treas.gov/Home/SdnList> 조회일 2026-11-14 변동: 잦음
 - [G31] OFAC 50 Percent Rule FAQ <https://ofac.treasury.gov/faqs/topic/1521> 조회일 2026-11-14 변동: 잦음
 - [G32] BIS Export Administration Regulations (15 CFR Parts 730–774) <https://www.bis.gov/regulations/ear> 조회일 2026-11-14 변동: 잦음
@@ -337,6 +340,16 @@
 - [G38] World Bank Group, Business Ready (B-READY) <https://www.worldbank.org/en/businessready> 조회일 2026-11-14
 - [G39] ILO Declaration on Fundamental Principles and Rights at Work (1998, amended 2022) <https://www.ilo.org/resource/conference-paper/ilo-1998-declaration-fundamental-principles-and-rights-work-and-its-follow> 조회일 2026-11-14
 - [G40] ILO Conventions, Protocols and Recommendations(기본 협약) <https://www.ilo.org/international-labour-standards/conventions-protocols-and-recommendations> 조회일 2026-11-14
+
+- [G41] 日本貿易保険(NEXI) 海外投資保険 <https://www.nexi.go.jp/service/product/index.html> 조회일 2026-11-14
+- [G42] JETRO 海外進出支援 <https://www.jetro.go.jp/services/fdi/> 조회일 2026-11-14
+- [G43] UK Export Finance <https://www.gov.uk/government/organisations/uk-export-finance> 조회일 2026-11-14
+- [G44] Export-Import Bank of the United States, About EXIM <https://www.exim.gov/about> 조회일 2026-11-14
+- [G45] UN Comtrade Database <https://comtradeplus.un.org/> 조회일 2026-11-14
+- [G46] UNCTAD Data Hub(UNCTADstat) <https://unctadstat.unctad.org/> 조회일 2026-11-14
+- [G47] WTO Stats <https://stats.wto.org/> 조회일 2026-11-14
+- [G48] 中华人民共和国公司法(2023 개정, 2024-07-01 시행) 第十二章 公司解散和清算(제229조~제242조) <http://www.npc.gov.cn/npc/c2/c30834/202312/t20231229_433999.html> 조회일 2026-11-14
+- [G49] 베트남 투자법 143/2025/QH15 제36조(Chấm dứt hoạt động của dự án đầu tư) — 정부 관보 <https://congbao.chinhphu.vn/van-ban/luat-so-143-2025-qh15-468703.htm> 조회일 2026-11-14 변동: 잦음
 
 ### 학술
 - [A1] Johanson & Vahlne(1977), The Internationalization Process of the Firm, JIBS 8(1) <https://doi.org/10.1057/palgrave.jibs.8490676> 조회일 2026-11-14

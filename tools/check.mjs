@@ -17,24 +17,26 @@ const OPTIONAL = ["경계·연결"];
 // 공식 기관 도메인(R11 정본). 하위 도메인 포함.
 const OFFICIAL_DOMAINS = [
   // 국내: 법령
-  "law.go.kr", "law.nanet.go.kr", "elaw.klri.re.kr",
+  "law.go.kr", "law.nanet.go.kr", "elaw.klri.re.kr", "lawmaking.go.kr",
   // 국내: 부처·감독·공공기관
   "mofe.go.kr", "moef.go.kr", "motir.go.kr", "moel.go.kr", "mohw.go.kr", "gov.kr", "fss.or.kr", "bok.or.kr", "nts.go.kr", "nps.or.kr", "comwel.or.kr",
   "kotra.or.kr", "investkorea.org", "exportvoucher.com", "koreaexim.go.kr", "ksure.or.kr", "0404.go.kr", "kita.net", "kcab.or.kr", "kcabinternational.or.kr", "kosti.or.kr", "yestrade.go.kr",
   // 글로벌: 정부·국제기구
   "govinfo.gov", "justice.gov", "legislation.gov.uk", "gov.uk", "oecd.org", "ohchr.org", "un.org", "unidroit.org", "iccwbo.org", "delaware.gov", "irs.gov", "cfius.gov",
-  "jetro.go.jp", "moj.go.jp", "acra.gov.sg", "chinhphu.vn", "mof.gov.vn", "mofcom.gov.cn", "npc.gov.cn", "ndrc.gov.cn", "gtai.de", "europa.eu", "treas.gov", "treasury.gov", "bis.gov",
-  "sanctionsmap.eu", "wassenaar.org", "unctad.org", "worldbank.org", "ilo.org",
+  "jetro.go.jp", "moj.go.jp", "moj.go.kr", "acra.gov.sg", "chinhphu.vn", "mof.gov.vn", "mofcom.gov.cn", "npc.gov.cn", "ndrc.gov.cn", "gtai.de", "europa.eu", "treas.gov", "treasury.gov", "bis.gov",
+  "sanctionsmap.eu", "wassenaar.org", "unctad.org", "worldbank.org", "ilo.org", "nexi.go.jp", "exim.gov", "wto.org",
   // 학술
-  "doi.org", "hbr.org",
 ];
+// 학술 키(A#)와 OECD 출판물에만 허용하는 도메인, 도메인 대신 정확한 URL로만 허용하는 예외.
+const ACADEMIC_DOMAINS = ["doi.org"];
+const URL_EXCEPTIONS = ["https://hbr.org/2001/09/distance-still-matters-the-hard-reality-of-global-expansion"];
 // 시리즈 영역(R13). 디스패처 브리프가 있는 영역 + go-develop.
 const SERIES = ["go-develop", "go-accounting", "go-ai", "go-compliance-and-legal", "go-control", "go-controllership", "go-corporate-communications", "go-cx", "go-data-analytics", "go-economics", "go-esg", "go-finance", "go-general-affairs", "go-hr", "go-hse", "go-icfr", "go-innovation-rnd", "go-leadership-negotiation", "go-marketing", "go-mis", "go-operations", "go-product", "go-project-management", "go-resilience", "go-sales", "go-scm", "go-security", "go-startup-agile", "go-strategy", "go-tax", "go-valuation"];
 const STALE_DAYS = 395; // 13개월
 const VOLATILE_DAYS = 183; // `변동: 잦음` 표시 출처는 6개월
 // 경계 표(docs/build/spec.md 「경계」)의 대응 모듈 — 정본. 모듈마다 그 go-* 이름이 든 경계·연결 줄이 있어야 한다.
 const BOUNDARY = {
-  "go-scm": ["F3", "R3"],
+  "go-scm": ["F3", "M1", "R3"],
   "go-tax": ["M1", "S6", "S7"],
   "go-finance": ["S1", "S6"],
   "go-accounting": ["S4"],
@@ -48,12 +50,12 @@ const BOUNDARY = {
   "go-strategy": ["M3"],
   "go-valuation": ["M3"],
   "go-marketing": ["M2"],
-  "go-economics": ["F2"],
+  "go-economics": ["F2", "S6"],
   "go-resilience": ["M1"],
   "go-leadership-negotiation": ["C1"],
 };
 // `변동: 잦음` 필수 대상(R11): 외국환거래규정, 진출국 외국인투자 규제, 제재·수출통제 목록.
-const VOLATILE_REQUIRED = [/외국환거래규정/, /Sanction|SDN|Consolidated List|50 Percent|Export Administration|Wassenaar|제재/i, /CFIUS|negative|네거티브|Luật Đầu tư|Nghị định|investment screening|외국인투자 심사/i];
+const VOLATILE_REQUIRED = [/외국환거래규정/, /Sanction|SDN|Consolidated List|50 Percent|Export Administration|Wassenaar|제재/i, /CFIUS|negative|네거티브|Luật Đầu tư|Nghị định|investment screening|외국인투자 심사|外商投资|외상투자/i, /전략물자|YESTRADE|수출허가|자가판정|전문판정/];
 // 졸업 모듈 X1 「만들어 볼 것」에 있어야 하는 진출 검토서의 절(R2·R12).
 const X1_SECTIONS = ["국가·진출 방식 비교", "국내 신고·보고 체크리스트", "현지 설립 경로", "운영 리스크", "지원 제도", "확인 필요 목록"];
 const NO_COMPARE_MAX = 0.2;
@@ -138,7 +140,9 @@ function checkSources(text, refs, today) {
     for (const u of urls) {
       let host = "";
       try { host = new URL(u).hostname; } catch { problems.push(`출처 ${m[1]}: URL 형식 오류`); continue; }
-      if (!OFFICIAL_DOMAINS.some((d) => host === d || host.endsWith(`.${d}`))) problems.push(`출처 ${m[1]}: 공식 도메인 아님 ${host}`);
+      const inList = (list) => list.some((d) => host === d || host.endsWith(`.${d}`));
+      const ok = URL_EXCEPTIONS.includes(u) || inList(OFFICIAL_DOMAINS) || (inList(ACADEMIC_DOMAINS) && (m[1].startsWith("A") || /OECD/.test(m[2])));
+      if (!ok) problems.push(`출처 ${m[1]}: 공식 도메인 아님 ${host}`);
     }
     if (/원문 미확인|재확인 대기/.test(m[2])) warnings.push(`출처 ${m[1]}: 원문 미확인 표시 — 다시 확인`);
     if (VOLATILE_REQUIRED.some((re) => re.test(m[2])) && !/변동: 잦음/.test(m[2])) problems.push(`출처 ${m[1]}: 변동 잦은 출처인데 「변동: 잦음」 표시 없음`);
