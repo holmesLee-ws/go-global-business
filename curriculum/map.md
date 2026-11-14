@@ -92,7 +92,7 @@
 - 핵심 질문: 현지 법인에 돈을 보내기 전에 한국에서 누구에게 무엇을 신고해야 하는가?
 - 목표: Apply — 처음 보는 투자 사례에서 해외직접투자 해당 여부, 신고 기관(지정거래외국환은행), 신고 시점과 순서를 판단한다.
 - 만들어 볼 것: 학습자 회사의 첫 투자 송금까지 국내 절차 흐름도(은행·서류·시점, 기준은 그 세션에서 확인)
-- 국내 근거: 외국환거래법 해외직접투자 정의와 자본거래 신고 [K2] [K4], 시행령의 해외직접투자 범위 [K10], 외국환거래규정 해외직접투자 절과 신고 [K47] [K48] [K50] [K51], 위반 시 제재 [K5] [K8], 금융감독원 신고 절차 안내 [K59], 2026-12-03 시행 예정 외국환거래법 개정(가상자산 관련, 해외직접투자 정의 호 번호 유지) [K127]
+- 국내 근거: 외국환거래법 해외직접투자 정의와 자본거래 신고 [K2] [K4], 시행령의 해외직접투자 범위 [K10], 외국환거래규정 해외직접투자 절과 신고 [K47] [K48] [K50] [K51], 위반 시 제재 [K5] [K8], 금융감독원 신고 절차 안내 [K59], 2026-12-03 시행 예정 외국환거래법 개정(자본거래 정의 정비 등) [K127]
 - 글로벌 비교: 중국 외상투자법의 정보 보고 [G26], 베트남 투자등록 절차 [G25]
 - 경계·연결: 외화 차입·자본거래 일반은 go-finance
 
@@ -109,7 +109,7 @@
 - 핵심 질문: 진출국에서 법인·지점·연락사무소 중 무엇으로, 어떤 순서로 세우고, 지점·사무소라면 한국에 무엇을 따로 신고하는가?
 - 목표: Evaluate — 관심 국가 하나에서 설립 형태 둘 이상을 책임 범위·설립 기간·허가·외국인 지분 제한·철수 쉬움으로 비교해 고르고, 설립 순서를 짠다. 지점·사무소를 고르면 해외지사 설치 신고 → 설치 완료 보고 → 폐쇄 신고의 국내 절차를 짚는다.
 - 만들어 볼 것: 관심 국가 설립 경로표(형태 비교, 현지 등록 단계, 한국 신고와의 순서 맞물림 — 현지 법인은 해외직접투자 신고, 지점·사무소는 해외지사 신고)
-- 국내 근거: 외국환거래규정 해외지사 설치 신고와 사후관리 [K122], 해외직접투자 신고 [K50], 대비 자료로 외국인투자촉진법의 투자 신고 [K29] [K30]
+- 국내 근거: 외국환거래규정 해외지사 설치 신고와 사후관리 [K122], 해외지사 경비를 자본거래로 정비하는 시행 예정 개정 [K127], 해외직접투자 신고 [K50], 대비 자료로 외국인투자촉진법의 투자 신고 [K29] [K30]
 - 글로벌 비교: 미국 델라웨어 법인 설립 [G18], 일본 진출 형태와 상업 등기 [G21] [G22], 싱가포르 회사 등록 [G23], 베트남 투자법·투자등록 [G24] [G25], 중국 외상투자법과 네거티브 리스트 [G26] [G27], 독일 GmbH 설립 [G28], EU 외국인투자 심사(현행 규정과 적용 예정 규정) [G29]
 - 경계·연결: 현지 개인정보·데이터 이전 규제는 go-security
 
@@ -182,7 +182,7 @@
 - 핵심 질문: 내 제품이나 거래 상대가 통제·제재 대상인지 어떻게 알고, 해당하면 무엇이 달라지는가?
 - 목표: Apply — 거래 사례에서 확인할 것(품목 판정, 최종 사용자·국가, 제재 목록, 소유 지분 규칙)과 조회 기관을 정한다. 해당 여부의 결론은 공식 판정과 전문가로 넘긴다.
 - 만들어 볼 것: 신규 해외 거래 제재·수출통제 스크리닝 순서도(조회 기관과 멈출 지점)
-- 국내 근거: 외국환거래법의 국제평화·안전 유지를 위한 지급·수령 허가(한국의 경제제재 근거) [K123] [K124], 대외무역법 전략물자와 수출허가·판정 [K14] [K15] [K16], 무역안보관리원과 YESTRADE [K17] [K119] [K120], 위반 시 벌칙 [K18]
+- 국내 근거: 외국환거래법의 국제평화·안전 유지를 위한 지급·수령 허가(한국의 경제제재 근거)와 그 대상을 정하는 재정경제부 고시(확인 필요) [K123] [K124] [K128], 대외무역법 전략물자와 수출허가·판정 [K14] [K15] [K16], 무역안보관리원과 YESTRADE [K17] [K119] [K120], 위반 시 벌칙 [K18]
 - 글로벌 비교: 미국 OFAC 제재 목록과 지분 합산 규칙(50 Percent Rule) [G30] [G31], 미국 수출관리규정(EAR) [G32], EU 제재 [G33] [G34], UN 안보리 제재 목록 [G36], 바세나르 체제 [G35]
 - 경계·연결: 전략물자 수출허가 신청 실무와 통관은 go-scm
 
@@ -299,7 +299,8 @@
 - [K124] 외국환거래법 시행령 제29조(지급 또는 수령의 허가) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> 조회일 2026-11-14 변동: 잦음
 - [K125] 한국수출입은행 해외사업관련대출(해외투자자금 등) <https://www.koreaexim.go.kr/HPHKFG045M01> 조회일 2026-11-14 변동: 잦음
 - [K126] 상법 제342조의2(자회사에 의한 모회사주식의 취득)·제412조의5(자회사의 조사권) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=54525&lang=KOR> 조회일 2026-11-14
-- [K127] 외국환거래법 일부개정법률(법률 제21714호, 2026-06-02 공포, 2026-12-03 시행 예정) — 국민참여입법센터 의안 제2218829호 <https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218829/detailRP> 조회일 2026-11-14 변동: 잦음
+- [K127] 외국환거래법 일부개정법률(법률 제21714호, 2026-06-02 공포, 2026-12-03 시행 예정 — 의안 주요내용: 자본거래 정의 정비(제3조 제1항 제19호, 해외지사 유지 경비 포함)와 가상자산 관련 신설) — 국민참여입법센터 의안 제2218829호 <https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218829/detailRP> 조회일 2026-11-14 변동: 잦음
+- [K128] 재정경제부 고시 게시판 — 「국제평화 및 안전유지 등의 의무이행을 위한 지급 및 영수허가지침」 현행 고시는 구축 때 원문 미확인, 세션에서 확인 필요 <https://www.mofe.go.kr/lw/denm/TbDenmList.do?bbsId=MOSFBBS_000000000120&menuNo=7090200> 조회일 2026-11-14 변동: 잦음
 
 ### 글로벌
 - [G1] 15 U.S.C. §78dd-1(발행인의 금지된 해외 거래 관행) — U.S. Code 2024 ed. <https://www.govinfo.gov/content/pkg/USCODE-2024-title15/html/USCODE-2024-title15-chap2B-sec78dd-1.htm> 조회일 2026-11-14
@@ -328,7 +329,7 @@
 - [G26] 중화인민공화국 외상투자법(2019 채택, 2020-01-01 시행) <https://policy.mofcom.gov.cn/claw/clawContent.shtml?id=66447> 조회일 2026-11-14 변동: 잦음
 - [G27] 중국 외상투자 진입 특별관리조치(네거티브 리스트) 2024년판 <https://www.ndrc.gov.cn/xxgk/jd/jd/202409/t20240907_1392878.html> 조회일 2026-11-14 변동: 잦음
 - [G28] Germany Trade & Invest, Investment Guide — Setting Up a GmbH <https://www.gtai.de/en/invest/investment-guide/setting-up-a-gmbh-630322> 조회일 2026-11-14
-- [G29] EU 외국인투자 심사 — 현행 Regulation (EU) 2019/452, 이를 대체할 Regulation (EU) 2026/1386(2026-06-17 채택, 2028-01-17 적용 예정 — 그때까지 2019/452가 현행) <https://policy.trade.ec.europa.eu/enforcement-and-protection/investment-screening_en> 조회일 2026-11-14 변동: 잦음
+- [G29] EU 외국인투자 심사 — 현행 Regulation (EU) 2019/452, 이를 대체할 Regulation (EU) 2026/1386(2026-06-17 발효, 2028-01-17 적용 예정 — 그때까지 2019/452가 현행) <https://policy.trade.ec.europa.eu/enforcement-and-protection/investment-screening_en> 조회일 2026-11-14 변동: 잦음
 - [G30] OFAC Specially Designated Nationals and Blocked Persons List <https://sanctionslist.ofac.treas.gov/Home/SdnList> 조회일 2026-11-14 변동: 잦음
 - [G31] OFAC 50 Percent Rule FAQ <https://ofac.treasury.gov/faqs/topic/1521> 조회일 2026-11-14 변동: 잦음
 - [G32] BIS Export Administration Regulations (15 CFR Parts 730–774) <https://www.bis.gov/regulations/ear> 조회일 2026-11-14 변동: 잦음
@@ -341,7 +342,7 @@
 - [G39] ILO Declaration on Fundamental Principles and Rights at Work (1998, amended 2022) <https://www.ilo.org/resource/conference-paper/ilo-1998-declaration-fundamental-principles-and-rights-work-and-its-follow> 조회일 2026-11-14
 - [G40] ILO Conventions, Protocols and Recommendations(기본 협약) <https://www.ilo.org/international-labour-standards/conventions-protocols-and-recommendations> 조회일 2026-11-14
 
-- [G41] 日本貿易保険(NEXI) 海外投資保険 <https://www.nexi.go.jp/service/product/index.html> 조회일 2026-11-14
+- [G41] 日本貿易保険(NEXI) 海外投資保険 상품 안내 <https://www.nexi.go.jp/product/booklet/pdf/pr07_08_02.pdf> 조회일 2026-11-14
 - [G42] JETRO 海外進出支援 <https://www.jetro.go.jp/services/fdi/> 조회일 2026-11-14
 - [G43] UK Export Finance <https://www.gov.uk/government/organisations/uk-export-finance> 조회일 2026-11-14
 - [G44] Export-Import Bank of the United States, About EXIM <https://www.exim.gov/about> 조회일 2026-11-14
