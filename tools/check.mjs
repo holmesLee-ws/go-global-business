@@ -60,7 +60,7 @@ const VOLATILE_REQUIRED = [/외국환거래규정/, /Sanction|SDN|Consolidated L
 const X1_SECTIONS = ["국가·진출 방식 비교", "국내 신고·보고 체크리스트", "현지 설립 경로", "운영 리스크", "지원 제도", "확인 필요 목록"];
 const NO_COMPARE_MAX = 0.2;
 // 금액 표기: 숫자(+천·백·만·억·조 단위 여러 개) 뒤 통화, 통화 기호·코드 앞뒤 숫자.
-const MONEY = /\d[\d,.]*\s*(?:[천백만억조]\s*)*(?:원|달러|엔|유로|위안|동|파운드)(?![가-힣])|(?:USD|US\$|\$|€|¥|£)\s*\d|\d\s*(?:USD|EUR|JPY|CNY|VND|KRW|GBP|SGD)\b/;
+const MONEY = /\d[\d,.]*\s*(?:[천백만억조]\s*)*(?:원|달러|엔|유로|위안|동|파운드)(?![가-힣])|\d[\d,.]*\s*억(?![가-힣])|(?:USD|US\$|\$|€|¥|£|₩|KRW|EUR|JPY|CNY|VND|GBP|SGD)\s*\d|\d\s*(?:USD|EUR|JPY|CNY|VND|KRW|GBP|SGD|dollars?|won|yen|euros?)\b/i;
 const NO_COMPARE = /^비교 실익 적음 — .+/;
 
 function parseCurriculum(text) {
@@ -163,7 +163,7 @@ function checkSources(text, refs, today) {
 
 function findVisualAssets(files) {
   const allowedJs = /^tools\/.*\.m?js$/;
-  return files.filter((f) => /\.(html?|css|svg|png|jpe?g|gif|webp|avif|ico|bmp|tiff?|heic)$/i.test(f) || (/\.m?js$/i.test(f) && !allowedJs.test(f)));
+  return files.filter((f) => /\.(html?|css|svgz?|png|jpe?g|gif|webp|avif|ico|bmp|tiff?|heic)$/i.test(f) || (/\.m?js$/i.test(f) && !allowedJs.test(f)));
 }
 
 function findTemplateMarkup(name, text) {
