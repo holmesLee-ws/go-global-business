@@ -228,12 +228,12 @@
 조회일은 모두 원문을 열어 확인한 날이다. 확인 방식(원문·검색 요약)과 조문 원문 대조 기록은 구축 원장에 있다(`docs/build/sources-ledger.md`). `변동: 잦음`은 개정·갱신이 잦아 튜터가 말할 때 확인 시점을 붙여야 하는 출처다.
 
 ### 국내
-- [K2] 외국환거래법 제3조 제1항 제18호(해외직접투자 정의) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14
-- [K4] 외국환거래법 제18조(자본거래의 신고 등) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14
-- [K5] 외국환거래법 제19조(경고 및 거래정지 등) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14
-- [K8] 외국환거래법 제32조(과태료) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14
-- [K10] 외국환거래법 시행령 제8조(해외직접투자) 제1항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> 조회일 2026-11-14
-- [K11] 외국환거래법 시행령 제8조(해외직접투자) 제2항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> 조회일 2026-11-14
+- [K2] 외국환거래법 제3조 제1항 제18호(해외직접투자 정의) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276137>(시행 2026. 1. 2., 법률 제21065호, 조문 번호·표제 일치) 조회일 2026-11-14
+- [K4] 외국환거래법 제18조(자본거래의 신고 등) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276137>(시행 2026. 1. 2., 법률 제21065호, 조문 번호·표제 일치) 조회일 2026-11-14
+- [K5] 외국환거래법 제19조(경고 및 거래정지 등) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276137>(시행 2026. 1. 2., 법률 제21065호, 조문 번호·표제 일치) 조회일 2026-11-14
+- [K8] 외국환거래법 제32조(과태료) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276137>(시행 2026. 1. 2., 법률 제21065호, 조문 번호·표제 일치) 조회일 2026-11-14
+- [K10] 외국환거래법 시행령 제8조(해외직접투자) 제1항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=273645>(시행 2025. 9. 19., 대통령령 제35743호, 조문 번호·표제 일치) 조회일 2026-11-14
+- [K11] 외국환거래법 시행령 제8조(해외직접투자) 제2항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=273645>(시행 2025. 9. 19., 대통령령 제35743호, 조문 번호·표제 일치) 조회일 2026-11-14
 - [K14] 대외무역법 제19조(전략물자) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14 변동: 잦음
 - [K15] 대외무역법 제19조의2(수출허가)~제19조의5(중개허가) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14 변동: 잦음
 - [K16] 대외무역법 제20조(전문판정)·제20조의2(자가판정) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=71487&lang=KOR> 조회일 2026-11-14 변동: 잦음
@@ -295,10 +295,10 @@
 - [K120] YESTRADE 온라인 자가판정 안내 <https://www.yestrade.go.kr/judgements/self/guide> 조회일 2026-11-14 변동: 잦음
 - [K122] 외국환거래규정 제9장 제2절 국내기업 등 해외지사(제9-16조 적용범위, 제9-18조 설치신고, 제9-24조 폐쇄, 제9-25조 사후관리) <https://www.mofe.go.kr/lw/denm/detailTbDenmView.do?searchBbsId1=MOSFBBS_000000000120&searchNttId1=MOSF_000000000079810&menuNo=7090200> 조회일 2026-11-14 변동: 잦음
 
-- [K123] 외국환거래법 제15조(지급절차 등) 제2항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> 조회일 2026-11-14 변동: 잦음
-- [K124] 외국환거래법 시행령 제29조(지급 또는 수령의 허가) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> 조회일 2026-11-14 변동: 잦음
+- [K123] 외국환거래법 제15조(지급절차 등) 제2항 <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=57324&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=276137>(시행 2026. 1. 2., 법률 제21065호, 조문 번호·표제 일치) 조회일 2026-11-14 변동: 잦음
+- [K124] 외국환거래법 시행령 제29조(지급 또는 수령의 허가) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=74027&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=273645>(시행 2025. 9. 19., 대통령령 제35743호, 조문 번호·표제 일치) 조회일 2026-11-14 변동: 잦음
 - [K125] 한국수출입은행 해외사업관련대출(해외투자자금 등) <https://www.koreaexim.go.kr/HPHKFG045M01> 조회일 2026-11-14 변동: 잦음
-- [K126] 상법 제342조의2(자회사에 의한 모회사주식의 취득)·제412조의5(자회사의 조사권) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=54525&lang=KOR> 조회일 2026-11-14
+- [K126] 상법 제342조의2(자회사에 의한 모회사주식의 취득)·제412조의5(자회사의 조사권) <https://elaw.klri.re.kr/kor_service/lawView.do?hseq=54525&lang=KOR> · 국가법령정보센터 현행본 <https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=272919>(시행 2026. 7. 23., 법률 제20991호, 조문 번호·표제 일치) 조회일 2026-11-14
 - [K127] 외국환거래법 일부개정법률(법률 제21714호, 2026-06-02 공포, 2026-12-03 시행 예정 — 의안 주요내용: 자본거래 정의 정비(제3조 제1항 제19호, 해외지사 유지 경비 포함)와 가상자산 관련 신설) — 국민참여입법센터 의안 제2218829호 <https://opinion.lawmaking.go.kr/gcom/nsmLmSts/out/2218829/detailRP> 조회일 2026-11-14 변동: 잦음
 - [K128] 재정경제부 고시 게시판 — 「국제평화 및 안전유지 등의 의무이행을 위한 지급 및 영수허가지침」 현행 고시는 구축 때 원문 미확인, 세션에서 확인 필요 <https://www.mofe.go.kr/lw/denm/TbDenmList.do?bbsId=MOSFBBS_000000000120&menuNo=7090200> 조회일 2026-11-14 변동: 잦음
 
