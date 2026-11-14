@@ -433,7 +433,7 @@ KLRI 수록본: 법률 제21215호(2025.12.23. 공포, 2026.1.1. 시행, 일부�
 G1 1회차 리뷰 지적으로 더 확인한 출처다. 지도 키: K123(kr-fxa-15-2) K124(kr-fxa-dec-29) K125(kexim-ovs-invest-loan) K126(kr-commercial-342-2·412-5) K127(kr-fxa-2026-amend) G41(nexi) G42(jetro-fdi-support) G43(ukef) G44(us-exim) G45(un-comtrade) G46(unctadstat) G47(wto-stats) G48(cn-company-law-ch12) G49(vn-invest-law-36). 「지급 및 영수허가지침」 고시는 미확인이라 지도에 넣지 않았고, 튜터가 세션에서 확인한다.
 
 
-- 원문 저장 위치: `~/tmp/go-global-business/raw/g1x/` (fxa.txt·commercial.txt=elaw, vn143.docx/vn143.txt=베트남 관보 docx, cn_co_npc.html, bill_11787647.pdf/bill.txt=국회 대안 원문, fss_b157_*.html, fss_bodo.html, ec_fdi.html, kexim_ovs.txt 등)
+- 원문 사본은 구축 머신의 임시 폴더에만 두었다(리포에 넣지 않음).
 - law.go.kr은 「11/13 21:00 ~ 11/14 21:00 시스템 점검」(sorry 페이지 실측)이라 쓰지 않았다. 재정경제부 누리집 행정규칙 게시판도 「법제처 서버와의 연결이 원활하지 않습니다」로 비어 있었다.
 - elaw 상법은 2020-06-09 법률 제17362호 판(elaw 표시 「현행」)이다. 그 뒤 개정이 있어도 아래 두 조문 번호와 표제는 그 판 기준이다.
 
