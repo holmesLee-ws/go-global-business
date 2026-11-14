@@ -31,7 +31,7 @@ const OFFICIAL_DOMAINS = [
 const ACADEMIC_DOMAINS = ["doi.org"];
 const URL_EXCEPTIONS = ["https://hbr.org/2001/09/distance-still-matters-the-hard-reality-of-global-expansion"];
 // 시리즈 영역(R13). 디스패처 브리프가 있는 영역 + go-develop.
-const SERIES = ["go-develop", "go-accounting", "go-ai", "go-compliance-and-legal", "go-control", "go-controllership", "go-corporate-communications", "go-cx", "go-data-analytics", "go-economics", "go-esg", "go-finance", "go-general-affairs", "go-hr", "go-hse", "go-icfr", "go-innovation-rnd", "go-leadership-negotiation", "go-marketing", "go-mis", "go-operations", "go-product", "go-project-management", "go-resilience", "go-sales", "go-scm", "go-security", "go-startup-agile", "go-strategy", "go-tax", "go-valuation"];
+const SERIES = ["go-develop", "go-accounting", "go-ai", "go-compliance-and-legal", "go-control", "go-controllership", "go-corporate-communications", "go-cx", "go-data-analytics", "go-economics", "go-esg", "go-finance", "go-general-affairs", "go-hr", "go-hse", "go-icfr", "go-innovation-rnd", "go-leadership-negotiation", "go-marketing", "go-mis", "go-operations", "go-product", "go-project-management", "go-resilience", "go-sales", "go-scm", "go-security", "go-startup-agile", "go-strategy", "go-tax", "go-treasury", "go-valuation"];
 const STALE_DAYS = 395; // 13개월
 const VOLATILE_DAYS = 183; // `변동: 잦음` 표시 출처는 6개월
 // 경계 표(docs/build/spec.md 「경계」)의 대응 모듈 — 정본. 모듈마다 그 go-* 이름이 든 경계·연결 줄이 있어야 한다.
@@ -39,6 +39,7 @@ const BOUNDARY = {
   "go-scm": ["F3", "M1", "R3"],
   "go-tax": ["M1", "S6", "S7"],
   "go-finance": ["S1", "S6"],
+  "go-treasury": ["S1", "S6"],
   "go-accounting": ["S4"],
   "go-control": ["S4"],
   "go-controllership": ["S4"],
