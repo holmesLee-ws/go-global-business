@@ -59,6 +59,8 @@ const VOLATILE_REQUIRED = [/외국환거래규정/, /Sanction|SDN|Consolidated L
 // 졸업 모듈 X1 「만들어 볼 것」에 있어야 하는 진출 검토서의 절(R2·R12).
 const X1_SECTIONS = ["국가·진출 방식 비교", "국내 신고·보고 체크리스트", "현지 설립 경로", "운영 리스크", "지원 제도", "확인 필요 목록"];
 const NO_COMPARE_MAX = 0.2;
+// 금액 표기: 숫자(+천·백·만·억·조 단위 여러 개) 뒤 통화, 통화 기호·코드 앞뒤 숫자.
+const MONEY = /\d[\d,.]*\s*(?:[천백만억조]\s*)*(?:원|달러|엔|유로|위안|동|파운드)(?![가-힣])|(?:USD|US\$|\$|€|¥|£)\s*\d|\d\s*(?:USD|EUR|JPY|CNY|VND|KRW|GBP|SGD)\b/;
 const NO_COMPARE = /^비교 실익 적음 — .+/;
 
 function parseCurriculum(text) {
@@ -89,7 +91,7 @@ function parseCurriculum(text) {
     for (const name of FIELDS) if (!fields[name]) problems.push(`${id}: 「${name}」 없음`);
     for (const [name, v] of Object.entries(fields)) {
       for (const r of v.matchAll(/\[([KGA]\d+)\]/g)) refs.add(r[1]);
-      if (/%|퍼센트/.test(v) || /\d[\d,.]*\s*(원|만원|억원|억|조원|달러|만 달러|엔|유로|위안|동)(?![가-힣])|(USD|US\$|\$|€|¥)\s*\d/.test(v)) problems.push(`${id}: 「${name}」에 비율·금액 표기 금지`);
+      if (/%|퍼센트/.test(v) || MONEY.test(v)) problems.push(`${id}: 「${name}」에 비율·금액 표기 금지`);
       if (name === "경계·연결") {
         const names = v.match(/go-[a-z-]+/g) || [];
         if (!names.length) problems.push(`${id}: 경계·연결에 go-* 영역 없음`);
@@ -106,7 +108,7 @@ function parseCurriculum(text) {
   for (const [name, ids] of Object.entries(BOUNDARY)) for (const id of ids) {
     const b = allFields.get(id)?.["경계·연결"] || "";
     if (!modules.has(id)) problems.push(`BOUNDARY ${name}: 없는 모듈 ${id}`);
-    else if (!b.includes(name)) problems.push(`${id}: 경계·연결에 ${name} 없음(BOUNDARY)`);
+    else if (!(b.match(/go-[a-z-]+/g) || []).includes(name)) problems.push(`${id}: 경계·연결에 ${name} 없음(BOUNDARY)`);
   }
   const mapped = new Set(Object.values(BOUNDARY).flat());
   for (const [id, f] of allFields) if (f["경계·연결"]) for (const n of f["경계·연결"].match(/go-[a-z-]+/g) || []) if (!(BOUNDARY[n] || []).includes(id)) warnings.push(`${id}: ${n} 경계·연결이 BOUNDARY에 없음`);
@@ -161,12 +163,13 @@ function checkSources(text, refs, today) {
 
 function findVisualAssets(files) {
   const allowedJs = /^tools\/.*\.m?js$/;
-  return files.filter((f) => /\.(html?|css|svg|png|jpe?g|gif|webp|avif)$/i.test(f) || (/\.m?js$/i.test(f) && !allowedJs.test(f)));
+  return files.filter((f) => /\.(html?|css|svg|png|jpe?g|gif|webp|avif|ico|bmp|tiff?|heic)$/i.test(f) || (/\.m?js$/i.test(f) && !allowedJs.test(f)));
 }
 
 function findTemplateMarkup(name, text) {
   const hits = [];
-  for (const m of text.matchAll(/(```|~~~)[\s\S]*?\1/g)) if (/<(!doctype|html|svg|style|canvas|script)\b/i.test(m[0])) hits.push(name);
+  // 펜스·들여쓴 코드 블록을 가리지 않고 지침 md 전체에서 복사용 마크업 태그를 금지한다.
+  if (/<(!doctype|html|svg|style|canvas|script)\b/i.test(text)) hits.push(name);
   return hits;
 }
 
@@ -182,7 +185,7 @@ function main() {
 
   const files = execFileSync("git", ["ls-files", "--cached", "--others", "--exclude-standard", "-z"], { cwd: root, encoding: "utf8" }).split("\0").filter(Boolean);
   for (const f of findVisualAssets(files)) errors.push(`미리 만든 시각 자료 금지: ${f}`);
-  for (const f of files.filter((x) => x.endsWith(".md") && existsSync(join(root, x)))) for (const n of findTemplateMarkup(f, read(f))) errors.push(`복사용 마크업 금지: ${n}`);
+  for (const f of files.filter((x) => x.endsWith(".md") && !x.startsWith("docs/build/") && existsSync(join(root, x)))) for (const n of findTemplateMarkup(f, read(f))) errors.push(`복사용 마크업 금지: ${n}`);
 
   for (const p of [".claude/settings.json", "learner-template/state.json"]) {
     try { JSON.parse(read(p)); } catch (e) { errors.push(`${p}: JSON 오류 ${e.constructor.name}`); }

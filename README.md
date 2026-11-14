@@ -56,7 +56,7 @@ Code 탭에서 데스크탑의 `go-global-business` 폴더를 선택합니다. C
 | [CLAUDE.md](CLAUDE.md), [tutor/](tutor/) | 튜터의 행동 규칙. 출처 확인 규칙은 [tutor/sources.md](tutor/sources.md) |
 | `.claude/` | 명령과 권한 설정 |
 | `learner-template/` | 학습 기록의 빈 양식 |
-| `learner/` | 내 기록과 내 HTML. 처음 시작할 때 생깁니다 |
+| `learner/` | 내 기록, 내 HTML, `learner/lab`의 표·초안 연습 파일. 처음 시작할 때 생깁니다 |
 
 `learner/`는 Git에서 제외되어 내 컴퓨터에만 남습니다. 그래서 `git pull`로 커리큘럼을 업데이트해도 기록이 충돌하지 않습니다. 컴퓨터를 옮길 때는 이 폴더를 직접 복사하세요.
 
@@ -64,4 +64,4 @@ Code 탭에서 데스크탑의 `go-global-business` 폴더를 선택합니다. C
 
 ## 튜터가 쓰는 권한
 
-튜터는 묻지 않고 내 학습 기록과 `learner/studio`의 HTML을 쓰고, 웹을 조사하고, 만든 HTML을 열 수 있습니다. 그 밖의 파일을 고칠 때는 평소처럼 허락을 구합니다. 웹 조사 때는 질문과 주소가 외부 서비스로 전달되므로, 민감한 정보는 대화에 넣지 마세요.
+튜터는 묻지 않고 내 학습 기록, `learner/studio`의 HTML, `learner/lab`의 표·초안 연습 파일을 쓰고, 웹을 조사하고, 만든 HTML을 열 수 있습니다. 그 밖의 파일을 고칠 때는 평소처럼 허락을 구합니다. 웹 조사 때는 질문과 주소가 외부 서비스로 전달되므로, 민감한 정보는 대화에 넣지 마세요.
